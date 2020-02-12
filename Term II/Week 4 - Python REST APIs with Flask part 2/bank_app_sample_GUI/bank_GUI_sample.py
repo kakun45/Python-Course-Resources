@@ -191,3 +191,6 @@ def create_account_screen():
     plot_interest_graph()
 create_login_screen()
 my_win.mainloop()
+
+
+#script copied and reformated from bigdataengineering.com!
