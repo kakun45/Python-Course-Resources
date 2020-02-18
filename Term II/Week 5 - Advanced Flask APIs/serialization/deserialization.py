@@ -1,9 +1,9 @@
-from marshmallow import Schema, fields, #INCLUDE, EXCLUDE
+from marshmallow import Schema, fields, #INCLUDE, EXCLUDE --> this can be used to tell the laoder which fields are to be unsed nad/or included
 
 
 class BookSchema(Schema):
-    title = fields.Str()
-    author = fields.Str()
+    title = fields.Str() # We can define which fields are require == fields.Str(requred=True)
+    author = fields.Str() # We can define which fields are require == fields.Str(requred=True)
     description = fields.Str()
     
     
@@ -16,11 +16,11 @@ class Book:
 incoming_book_data = {
     "title": "The Pragmatic Programmer",
     "author": "Andy Hunt",
-    "description": "AOne of the best books about software engineering."
+    "description": "One of the best books about software engineering."
     
 }
 
-book_schema = BookSchema()
+book_schema = BookSchema() # in the argument we can use unknown=INCLUDE if we have imported the proper packages 
 book = book_schema.load(incoming_book_data)
 book_object = Book(**book)
 
