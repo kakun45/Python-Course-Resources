@@ -2,10 +2,10 @@ from requests import Response, post
 from flask import request, url_for
 from db import db
 
-MAILGUN_DOMAIN = "sandboxf4c7fb1b36be4a0fb93236a2dc4c8148.mailgun.org" #"your_mailgun_domain"
-MAILGUN_API_KEY = "fc814bebad94287521f678d0017f352f-7238b007-2dd1d03c" #"your_mailgun_api_key"
+MAILGUN_DOMAIN = "" #"your_mailgun_domain"
+MAILGUN_API_KEY = "" #"your_mailgun_api_key"
 FROM_TITLE = "Stores REST API"
-FROM_EMAIL = "postmaster@sandboxf4c7fb1b36be4a0fb93236a2dc4c8148.mailgun.org" #"your_mailgun_email"
+FROM_EMAIL = "" #"your_mailgun_email"
 
 
 class UserModel(db.Model):
