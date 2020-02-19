@@ -1,4 +1,4 @@
-from marshmallow import Schema, fields, #INCLUDE, EXCLUDE --> this can be used to tell the laoder which fields are to be unsed nad/or included
+from marshmallow import Schema, fields, #INCLUDE, EXCLUDE --> this can be used to tell the laoder which fields are to be unsed and/or included
 
 
 class BookSchema(Schema):

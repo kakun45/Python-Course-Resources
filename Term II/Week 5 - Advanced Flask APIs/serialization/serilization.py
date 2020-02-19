@@ -20,4 +20,6 @@ book = Book("The Pragmatic Programmer", "Andy Hunt", "One of the best books abou
 book_schema = BookSchema()
 book_dict = book_schema.dump(book)
 
-print(book_dict)
+#print(book_dict)
+
+print(book)
